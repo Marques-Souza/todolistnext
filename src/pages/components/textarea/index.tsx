@@ -9,4 +9,4 @@ const Textarea = ({ ...rest }: HTMLProps<HTMLTextAreaElement>) => {
     )
 }
 
-export default Textarea;  // Exportando como default
+export default Textarea;  
