@@ -2,7 +2,8 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 import styles from './styles.module.css'
 import Link from 'next/link'
 
-export function Header() {
+// Alterando para export default
+const Header = () => {
 
    const { data: session, status } = useSession();
 
@@ -19,7 +20,6 @@ export function Header() {
                      Meu Painel
                   </Link>
                )}
-
             </nav>
             {status === "loading" ? (
                <></>
@@ -32,3 +32,5 @@ export function Header() {
       </header>
    )
 }
+
+export default Header;  // Exportando como default
